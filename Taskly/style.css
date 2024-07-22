@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+body {
+	background-image: linear-gradient(142deg, #3d8be6 35%, #4c369a 132%);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rectangle {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 323px;
+	height: 515px;
+	display: flex;
+	justify-items: center;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 0;
+	padding: 20px 41px 48px 36px;
+	border-radius: 7px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	border: solid 1px #b0aaaa;
+	background-color: #d9d9d9;
+}
+.Taskly {
+	display: flex;
+	justify-content: center;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #323ad7;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.Line-1 {
+	width: 61px;
+	height: 2px;
+	background-color: #6324d0;
+}
+.No-items-in-list-Add-your-new-task {
+	width: 100%;
+	margin-top: 4em;
+	flex-grow: 0;
+
+	font-family: "League Spartan", sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+}
+.object {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0px 0 0;
+	/* height: 30vh; */
+}
+.input-text {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.input-text input {
+	width: 100%;
+	border: none;
+	height: 30px;
+	padding-left: 1em;
+	background-color: transparent;
+}
+.input-text .input-section {
+	width: 100%;
+}
+.input-text input:focus {
+	outline: none;
+}
+.input-text input::placeholder {
+	color: #736b6b;
+	font-family: "Karla", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;
+}
+.Line-2 {
+	width: 100%;
+	height: 1px;
+	background-color: #2d37d1;
+}
+.button {
+	cursor: pointer;
+}
+.button img {
+	width: 50px;
+}
+.container2 {
+	min-height: 90%;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.task-list {
+	width: 100%;
+	padding: 0;
+	overflow: auto;
+}
+.task-list::-webkit-scrollbar {
+	width: 6px;
+}
+.task-list::-webkit-scrollbar-track {
+	background-color: #f1f1f130;
+	border-radius: 8px;
+}
+.task-list::-webkit-scrollbar-thumb {
+	background-color: #6016c1;
+	border-radius: 8px;
+}
+ul {
+	list-style: none;
+}
+.list-items {
+	display: inline-block;
+	line-height: 1.5;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	cursor: pointer;
+	font-family: "Merienda", cursive;
+	align-items: center;
+	-webkit-tap-highlight-color: transparent;
+}
+.list-items:last-child {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+li p {
+	width: 80%;
+}
+.task-status {
+	color: #8e2de2;
+}
+.delete {
+	color: rgb(96, 22, 193);
+	transition: all 0.2s;
+}
+.delete:hover {
+	color: red;
+}
+.task-complete {
+	text-decoration: line-through;
+}
