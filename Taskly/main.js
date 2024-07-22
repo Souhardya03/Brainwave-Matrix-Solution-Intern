@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	)[0];
 	const taskList = document.querySelector("ul.task-list");
 
-	// Load tasks from local storage
+	
 	function loadTasks() {
 		const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 		tasks.forEach(task => addTaskToList(task.text, task.completed));
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
-	// Save tasks to local storage
+	
 	function saveTasks() {
 		const tasks = [];
 		taskList.querySelectorAll("li").forEach(task => {
@@ -103,6 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		addnewTask();
 	});
 
-	// Load tasks when the page is loaded
+	
 	loadTasks();
 });
